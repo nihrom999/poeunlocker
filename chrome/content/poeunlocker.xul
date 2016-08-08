@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<overlay id="sample" 
+xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ <script type="application/javascript" src="chrome://poeunlocker/content/poeunlocker.js"/>
+ <statusbar id="status-bar">
+  <statusbarpanel id="unlocker-panel" label="PoE unlocker"/>
+ </statusbar>
+</overlay>

@@ -1,0 +1,2 @@
+content     poeunlocker    chrome/content/
+overlay chrome://messenger/content/messenger.xul chrome://poeunlocker/content/poeunlocker.xul
