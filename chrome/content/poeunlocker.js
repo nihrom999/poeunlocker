@@ -24,7 +24,8 @@ var newMailListener = {
     msgAdded: function(aMsgHdr) {
         if( !aMsgHdr.isRead ) {
             var body = msgHdrToMessageBody(aMsgHdr, false, -1);
-            var code = regEx.exec(body);
+            var matchArr = body.match(regEx);
+	    var code = matchArr[0];
 
             if(code != null){
                 const clipboardHelper = Components.classes["@mozilla.org/widget/clipboardhelper;1"].getService(Components.interfaces.nsIClipboardHelper);
